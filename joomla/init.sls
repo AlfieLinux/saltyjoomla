@@ -14,6 +14,10 @@ unzipjoomla:
     - user: www-data
     - group: www-data
     - mode: 755
+    - recurse:
+      - user
+      - group
+      - mode
 
 zipremoval:
   cmd.run:
