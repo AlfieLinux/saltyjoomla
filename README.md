@@ -24,7 +24,7 @@ Database Configuration credentials:
 ```
 Host name: localhost
 user: joomla
-password: joomlaTest
+password: jui;laeng3tah?yaeFai
 Database Name: joomla
 Table Prefix: can be anything
 ```
@@ -33,20 +33,16 @@ I made it so that you can manage the website settings yourself, since it only ta
 
 # How do I install the module?
 
-Glad you asked. You start by cloning my github salt repo to your /home/user/ directory
+Glad you asked. You start grabbing the bash installer script from my repo and running it in /home/xubuntu/
 
 ```bash
-§ git clone https://github.com/AlfieLinux/saltyjoomla.git
-```
-
-Then you connect to the saltyjoomla directory, run the script inside and go to localhost/joomla
-
-```bash
-§ cd saltyjoomla
+§ wget https://raw.githubusercontent.com/AlfieLinux/saltyjoomla/master/saltyjoomla.sh
 § bash saltyjoomla.sh
-§ firefox localhost/joomla
 ```
+Congratulations, now you have joomla readily installed on your server.
+
+As a friendly reminder, this is not server safe installation at all. You should be cautious when using this.
 
 # Remarks
 
-So far this module only works on Xubuntu 18.04 (might work on other Xubuntus, but it somehow had a few errors when I tried it on 16.04 using vagrant)
+So far this module only works on Xubuntu 18.04 (might work on other Xubuntus, but it somehow had a few errors when I tried it on 16.04 using vagrant). I tried in on the lab computer at my school and it worked like a charm (12.12.2018).
