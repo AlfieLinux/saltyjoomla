@@ -23,7 +23,7 @@ I made it so that you can manage the website settings yourself, since it only ta
 
 # How do I install the module?
 
-Glad you asked. You start grabbing the bash installer script from my repo and running it in /home/xubuntu/
+Glad you asked. You start by grabbing the bash "setup script" from my repo and running it in /home/xubuntu/
 
 ```bash
 § wget https://raw.githubusercontent.com/AlfieLinux/saltyjoomla/master/saltyjoomla.sh
