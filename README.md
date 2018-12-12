@@ -44,6 +44,6 @@ Congratulations, now you have joomla readily installed on your server.
 
 As a friendly reminder, this is not server safe installation at all. You should be cautious when using this.
 
-# Remarks
+# Additional information
 
 So far this module only works on Xubuntu 18.04 (might work on other Xubuntus, but it somehow had a few errors when I tried it on 16.04 using vagrant). I tried in on the lab computer at my school and it worked like a charm (12.12.2018).
