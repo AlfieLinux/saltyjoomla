@@ -15,7 +15,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 
 Simply put, it creates a joomla testing environment. 
 
-**I would suggest caution, since this is by no means a secure module and I would suggest to not use it outside**
+**I would suggest caution, since this is by no means a secure module and I would suggest to not use it outside of a lab environment**
 
 It was created for the sole purpose of quickly creating a testing environment for Joomla themes, templates and whatnot. This module is setup so that you can acces Joomla through localhost/joomla and the login details are listed below.
 

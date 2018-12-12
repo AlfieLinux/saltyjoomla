@@ -19,7 +19,7 @@ install-ap2-php:
       - php-curl
       - php-xmlrpc
 
-# To enable accessibility from the different URL, 
+# This part was required for joomla to run and it was convenient since I couldn't figure anything else out to restart apache 
 
 /etc/apache2/mods-enabled/rewrite.load:
   file.symlink:
