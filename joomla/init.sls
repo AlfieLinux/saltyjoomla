@@ -1,0 +1,21 @@
+getjoomla:
+  cmd.run:
+    - name: sudo wget https://downloads.joomla.org/cms/joomla3/3-8-10/Joomla_3-8-10-Stable-Full_Package.zip -P /tmp/
+
+unzipjoomla:
+  archive.extracted:
+    - name: /var/www/html/joomla
+    - source: /tmp/Joomla_3-8-10-Stable-Full_Package.zip 
+    - archive_format: zip
+    - enforce_toplevel: False
+
+/var/www/html/joomla:
+  file.directory:
+    - user: www-data
+    - group: www-data
+    - mode: 755
+
+zipremoval:
+  cmd.run:
+    - name: sudo rm -r /tmp/Joomla_3-8-10-Stable-Full_Package.zip
+
