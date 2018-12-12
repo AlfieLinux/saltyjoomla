@@ -19,16 +19,6 @@ Simply put, it creates a joomla testing environment.
 
 It was created for the sole purpose of quickly creating a testing environment for Joomla themes, templates and whatnot. This module is setup so that you can acces Joomla through localhost/joomla and the login details are listed below.
 
-Database Configuration credentials: 
-
-```
-Host name: localhost
-user: joomla
-password: jui;laeng3tah?yaeFai
-Database Name: joomla
-Table Prefix: can be anything
-```
-
 I made it so that you can manage the website settings yourself, since it only takes a few seconds.
 
 # How do I install the module?
@@ -39,6 +29,17 @@ Glad you asked. You start grabbing the bash installer script from my repo and ru
 § wget https://raw.githubusercontent.com/AlfieLinux/saltyjoomla/master/saltyjoomla.sh
 § bash saltyjoomla.sh
 ```
+
+Database Configuration credentials:
+
+```
+Host name: localhost
+user: joomla
+password: jui;laeng3tah?yaeFai
+Database Name: joomla
+Table Prefix: can be anything
+```
+
 Congratulations, now you have joomla readily installed on your server.
 
 As a friendly reminder, this is not server safe installation at all. You should be cautious when using this.
