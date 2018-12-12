@@ -19,19 +19,13 @@ install-ap2-php:
       - php-curl
       - php-xmlrpc
 
-# To access website from a different URL.
-
-/etc/apache2/sites-available/joomlaweb.conf:
-  file.managed:
-    - source: salt://apache/joomlaweb.conf
-
-# To enable accessibility from the different URL.
+# To enable accessibility from the different URL, 
 
 /etc/apache2/mods-enabled/rewrite.load:
   file.symlink:
     - target: /etc/apache2/mods-available/rewrite.load
 
-# Restarting Apache
+# Restarting Apache, didn't seem to restart apache without rewrite load.
 
 apache2restart:
   service.running:

@@ -1,35 +1,37 @@
 # saltyjoomla
-my joomla salt stack
 
-https://websiteforstudents.com/install-joomla-cms-on-ubuntu-16-04-lts-with-apache2-mariadb-php-7-1-and-lets-encrypt-free-ssl-tls/
-https://hostadvice.com/how-to/how-to-install-joomla-on-an-ubuntu-18-04-vps-or-dedicated-server/
-https://github.com/fintanmm/joomla-formula
-http://terokarvinen.com/2018/aikataulu-palvelinten-hallinta-ict4tn022-3004-ti-ja-3002-to-loppukevat-2018-5p#comment-4236
-http://terokarvinen.com/?s=mariadb
-https://github.com/AlfieLinux/saltyjoomla
-https://github.com/AlfieLinux/saltyjoomla.git
+This module was created as the "final project" for [ICT4TN022 "Configuration Management Systems"](http://terokarvinen.com/2018/aikataulu--palvelinten-hallinta-ict4tn022-3004-ti-ja-3002-to--loppukevat-2018-5p) 
 
-Installing apache 
+This module is also under GPL Version 3 or later.
 
-sudo apt-get -y install apache2
+Creator: Tuomas Olkinuora (2018)
 
-installing mariadb 
+# What is Joomla you ask.
 
-sudo apt-get -y install mariadb-server mariadb-client
+Joomla is a free and open-source content management system (CMS) for publishing web content. 
+[More about Joomla here](https://en.wikipedia.org/wiki/Joomla)
 
-sudo mysql_secure_installation
+# What does this module do?
 
-sudo systemctl restart mysql.service
+**I would suggest caution, since this is by no means a secure module and I would suggest to not use it outside**
 
-sudo apt-get -y install php7.1 libapache2-mod-php7.1 php7.1-common php7.1-mbstring php7.1-xmlrpc php7.1-soap php7.1-gd php7.1-xml php7.1-intl php7.1-mysql php7.1-cli php7.1-mcrypt php7.1-ldap php7.1-zip php7.1-curl
+It was created for the sole purpose of quickly creating a testing environment for Joomla themes, templates and whatnot. This module is setup so that you can acces Joomla through localhost/joomla and the login details are listed below.
 
-sudo mysql -u root -p
+Password for Joomla super user:
 
-CREATE DATABASE joomla;
+```
+user: joomlauser
+password: joomlaPass
+```
 
-GRANT ALL ON joomla.* TO joomla@localhost IDENTIFIED BY 'goodpassword123';
+If you want to have your own credentials you can easily do so by editing the file located in 
 
-FLUSH PRIVILEGES;
-EXIT;
 
-naruadb -u joomla -p
+Password for mariadb:
+
+```
+user: joomla@localhost
+password: joomlaTest
+```
+
+

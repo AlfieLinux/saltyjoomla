@@ -22,14 +22,3 @@ unzipjoomla:
 zipremoval:
   cmd.run:
     - name: sudo rm -r /tmp/Joomla_3-8-10-Stable-Full_Package.zip
-
-/var/www/html/joomla/configuration.php:
-  file.managed:
-    - source: salt://joomla/configuration.php
-    - user: www-data
-    - group: www-data
-    - mode: 755
-
-rminstalldir:
-  cmd.run:
-    - name: sudo rm -r /var/www/html/joomla/installation
