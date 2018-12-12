@@ -45,3 +45,7 @@ Then you connect to the saltyjoomla directory, run the script inside and go to l
 § firefox localhost/joomla
 ```
 
+# Afterthoughts
+
+So far this module only works on Xubuntu 18.04 (might work on other Xubuntus, but i've only tested it on 18.04).
+
