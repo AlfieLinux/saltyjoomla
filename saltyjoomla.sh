@@ -9,6 +9,12 @@ setxkbmap fi
 sudo apt-get update
 sudo apt-get -y install git salt-minion
 
+echo "Enabling firewall and allowing ports 80 and 22"
+
+sudo ufw allow 80/tcp
+sudo ufw allow 22/tcp
+sudo ufw enable
+
 echo "Creating /srv/salt if by any chance one doesn't exist"
 
 sudo mkdir /srv/salt
