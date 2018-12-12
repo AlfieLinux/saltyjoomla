@@ -17,21 +17,31 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 
 It was created for the sole purpose of quickly creating a testing environment for Joomla themes, templates and whatnot. This module is setup so that you can acces Joomla through localhost/joomla and the login details are listed below.
 
-Password for Joomla super user:
+Database Configuration credentials: 
 
 ```
-user: joomlauser
-password: joomlaPass
-```
-
-If you want to have your own credentials you can easily do so by editing the file located in 
-
-
-Password for mariadb:
-
-```
-user: joomla@localhost
+Host name: localhost
+user: joomla
 password: joomlaTest
+Database Name: joomla
+Table Prefix: can be anything
 ```
 
+I made it so that you can manage the website settings yourself, since it only takes a few seconds.
+
+# How do I install the module?
+
+Glad you asked. You start by cloning my github salt repo to your /home/user/ directory
+
+```bash
+§ git clone https://github.com/AlfieLinux/saltyjoomla.git
+```
+
+Then you connect to the saltyjoomla directory, run the script inside and go to localhost/joomla
+
+```bash
+§ cd saltyjoomla
+§ bash saltyjoomla.sh
+§ firefox localhost/joomla
+```
 
