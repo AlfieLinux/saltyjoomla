@@ -15,6 +15,10 @@ sudo ufw allow 80/tcp
 sudo ufw allow 22/tcp
 sudo ufw enable
 
+echo "restarting ufw to apply the settings"
+
+sudo systemctl restart ufw.service
+
 echo "Creating /srv/salt if by any chance one doesn't exist"
 
 sudo mkdir /srv/salt
