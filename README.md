@@ -30,7 +30,9 @@ Glad you asked. You start by grabbing the bash "setup script" from my repo and r
 § bash saltyjoomla.sh
 ```
 
-Database Configuration credentials:
+You can use whatever email, username, description and password you want for the superuser.
+
+Database Configuration credentials are as follows and they are preset:
 
 ```
 Host name: localhost
