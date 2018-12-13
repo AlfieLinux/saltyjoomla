@@ -25,6 +25,10 @@ install-ap2-php:
   file.symlink:
     - target: /etc/apache2/mods-available/rewrite.load
 
+/var/www/html/index.html:
+  file.managed:
+    - source: salt://apache/index.html
+
 # Restarting Apache, didn't seem to restart apache without rewrite load.
 
 apache2restart:
